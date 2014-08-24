@@ -1,22 +1,22 @@
 run_analysis
 ============
 
-Getting and Cleaning Data Course -- Course Project
+<h1>Getting and Cleaning Data Course -- Course Project</h1>
 
-<body><pre>The files are as follows:
+<body>The files are as follows:
 
-   readme.md - This file
+<pre>   readme.md - This file
    run_analysis.R - R Script File created with RStudio Version 0.98.976
-   tidydata.txt - Output data file
+   tidydata.txt - Output data file</pre>
    
-Original data files are located in the folder "UCI HAR Dataset", and the data itself was obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. However, the data may or may not be obtained from the same web site, as the site now gives a 403 Access error as of this writing. Original data descriptors are found in the features.txt and features_info.txt files in the data directory.
+<p>Original data files are located in the folder "UCI HAR Dataset", and the data itself was obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. However, the data may or may not be obtained from the same web site, as the site now gives a 403 Access error as of this writing. Original data descriptors are found in the features.txt and features_info.txt files in the data directory.</p>
 
 
-The R script reads in the activity labels, variable labels, test data, and training data from the subdirectory called "UCI HAR Dataset". The test data and the training data are reloaded after extracting only the columns containing "mean" and "std" in the column names. Then each data set is combined with the Subject and Activity files, creating one large test and one large training datasets. The two sets are then merged together. The Activity number is replaced with a descriptive field, based on the data from the Activity file. The data is then melted and casted to create a tidy data set.
+<p>The R script reads in the activity labels, variable labels, test data, and training data from the subdirectory called "UCI HAR Dataset". The test data and the training data are reloaded after extracting only the columns containing "mean" and "std" in the column names. Then each data set is combined with the Subject and Activity files, creating one large test and one large training datasets. The two sets are then merged together. The Activity number is replaced with a descriptive field, based on the data from the Activity file. The data is then melted and casted to create a tidy data set.</p>
 
-Data Code Book for tidydata.txt:
+<h2>Data Code Book for tidydata.txt</h2>
 
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+<p>The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.</p>
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
@@ -24,7 +24,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
+<pre>
 tBodyAcc-XYZ
 tGravityAcc-XYZ
 tBodyAccJerk-XYZ
