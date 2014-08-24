@@ -5,7 +5,8 @@ run_analysis
 
 <body>The files are as follows:
 
-<pre>   readme.md     - This file
+<pre>
+   readme.md      - This file
    run_analysis.R - R Script File created with RStudio Version 0.98.976
    tidydata.txt   - Output data file</pre>
    
