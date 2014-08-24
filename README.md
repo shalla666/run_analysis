@@ -3,7 +3,7 @@ run_analysis
 
 Getting and Cleaning Data Course -- Course Project
 
-<body>The files are as follows:
+<body><pre>The files are as follows:
 
    readme.md - This file
    run_analysis.R - R Script File created with RStudio Version 0.98.976
@@ -72,4 +72,4 @@ tBodyGyroMean
 tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
-</body>
+</pre></body>
